@@ -8,8 +8,8 @@ Begin by cloning this repository to retrieve the csv files containing total annu
 
 ### Prerequisites
 
-Packages
-*library(ggplot2)
+#### Packages
+* library(ggplot2)
 
 ### Installing
 install.packages("ggplot2")
