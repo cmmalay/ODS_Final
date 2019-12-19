@@ -68,15 +68,13 @@ Keyser_plot <- ggplot() + geom_line(aes(y = PRCP, x = DATE), data = Keyser)
 
 From these plots, we can see that Princeton and Beckley Raleigh share a generally similar trend of high peaks in 2003, 2006, and 2009. They also share low peaks in 2005 and 2007. This makes sense as both stations are in the Southern Coal Fields region. The Keyser and Glady plots share high peaks in 2003 and 2007 with low peaks around 2005 and 2010. This makes sense as both stations are in the Valley and Ridge region. 
 
+### Conclusion
+From looking at the resulting graphs, it seems that the northern station Glady, showed realtively high amounts of precipitation while the other northern station Keyser, showed more varied amounts of rainfall. Beckley Raleigh and Princeton both showed generally consistent amounts of precipiation above 30 inches. From these results, rainfall could be a factor in increased landslide occurrence in the southern coal fields region. Some limitations were that not all stations had complete datasets. Glady was also missing values for 2000 and 2010. 
+
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
+* Caleb Malay 
 
 ## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Amy Hessl- for teaching us R and making this semester great.
+* Google for its endless knowledge repository. 
