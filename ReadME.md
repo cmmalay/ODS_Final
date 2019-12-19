@@ -30,7 +30,11 @@ BeckleyRaleigh_boxplot <- boxplot(Beckley_Raleigh$PRCP, main= "Beckley_Raleigh A
 Glady_boxplot <- boxplot(Glady$PRCP, main= "Glady Annual Precipitation")
 Keyser_boxplot <- boxplot(Keyser$PRCP, main= "Keyser Annual Precipitation")
 ```
-
+![Princeton_box](Images/Princeton_boxplot.PNG) 
+![BeckleyRaleigh_box](Images/BeckleyRaleigh_boxplot.PNG)
+![Glady_box](Images/Glady_boxplot.PNG)
+![Keyser_box](Images/Keyser_boxplot.PNG)
+From these boxplots, we can see that Beckley Raleigh Airport and Keyser stations contained data that had a smaller variance. Princeton and Glady stations contained data that had a wider variance. We can also see that Keyser had one extreme outlier. The data from the Glady station appear to have generally higher values. 
 
 ## Next we can create some barplots to look at the frequency.
 ```
@@ -40,16 +44,29 @@ Keyser_Precip_bar <- barplot(Keyser$PRCP, main = "Keyser Precipitation", xlab = 
 Princeton_Precip_bar <- barplot(Princeton$PRCP, main = "Princeton Precipitation", xlab = "Total Annual Precipitation", col= "darkred")
 BeckleyRaleigh_Precip_bar <- barplot(Beckley_Raleigh$PRCP, main = "Beckley_Raleigh Precipitation", xlab = "Total Annual Precipitation", col= "darkred")
 ```
-
+![Princeton_bar](Images/Princeton_bar.PNG)
+![Beckley_bar](Images/BeckleyRaleigh_bar.PNG)
+![Glady_bar](Images/Glady_bar.PNG)
+![Keyser_bar](Images/Keyser_bar.PNG)
+From these barplots we can see that the Beckley Raleigh Airport and Glady stations generally had values that were around 40 inches and above. The Keyser and Princeton graphs showed values from lower 30 to 50 inches. 
 
 ## Finally, we can plot the data to look at trends. 
 ```
 Princeton_plot <- ggplot() + geom_line(aes(y = PRCP, x = DATE), data = Princeton)
-BeckleyRaleigh_plot <- ggplot() + geom_line(aes(y = PRCP, x = DATE), data = Beckley_Raleigh)
+BeckleyRaleigh_plot <- ggplot() + (aes(y = PRCP, x = DATE), data = Beckley_Raleigh)
 Glady_plot <- ggplot() + geom_line(aes(y = PRCP, x = DATE), data = Glady)
 Keyser_plot <- ggplot() + geom_line(aes(y = PRCP, x = DATE), data = Keyser)
 ```
+### Princeton
+![Princeton_plot](Images/Princeton_plot.PNG)
+### Beckley_Raleigh
+![Beckley_plot](Images/BeckleyRaleigh_plot.PNG)
+### Glady
+![Glady_plot](Images/Glady_plot.PNG)
+### Keyser
+![Keyser_plot](Images/Keyser_plot.PNG)
 
+From these plots, we can see that Princeton and Beckley Raleigh share a generally similar trend of high peaks in 2003, 2006, and 2009. They also share low peaks in 2005 and 2007. This makes sense as both stations are in the Southern Coal Fields region. The Keyser and Glady plots share high peaks in 2003 and 2007 with low peaks around 2005 and 2010. This makes sense as both stations are in the Valley and Ridge region. 
 
 ## Authors
 
